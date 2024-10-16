@@ -1,4 +1,5 @@
 //nav
+const body= document.querySelector("body");
 const resp = document.querySelector(".icon");
 const nav = document.getElementById("nav");
 let currentIndex = 0;
@@ -9,16 +10,34 @@ resp.addEventListener("click", function () {
       {
         resp.style.transform = "rotate(90deg)";
         nav.style.right = "0";
+       body.style.opacity=".5"
+       
+        
+        
       }
       break;
-
-    case 0:
-      {
-        resp.style.transform = "rotate(0deg)";
-        nav.style.right = "-200px";
+      
+      case 0:
+        {
+          resp.style.transform = "rotate(0deg)";
+          nav.style.right = "-200px";
+          body.style.opacity="1"
       }
       break;}
 });
+function updateNavDisplay() {
+  const bodyWidth = window.innerWidth;
+  const nav = document.querySelector('nav'); 
+  if (bodyWidth > 750) {
+      nav.style.display = "none"; 
+      body.style.opacity="1"
+  } else {
+      nav.style.display = "block"; 
+      
+  }
+}
+updateNavDisplay();
+window.addEventListener('resize', updateNavDisplay);
 //nav
 
 
@@ -59,4 +78,7 @@ function prevSlide(no) {
     slideIndex[no - 1]--;
     showSlides(no - 1);
 }
+window.addEventListener('resize', function() {
+    showSlides(currentSlider); // استدعاء الدالة showSlides للتأكد من ضبط الشرائح عند تغيير حجم النافذة
+});
 //slider
