@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* direction: rtl; */
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(to right, #BD0739,#1c6bff,#969696);
+    /* background:repeating-radial-gradient(circle, #BD0739,#1c6bff,#969696 ); */
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+
+/* header */
+header {
+    /* background-image: linear-gradient(to right, #BD0739, #1c6bff); */
+    /* background-image: linear-gradient(to right, #BD0739, #1c6bff, #969696); */
+    background-image: linear-gradient(to right, rgba(189, 7, 57, 0.8), rgba(28, 107, 255, 0.8));
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+   
+    height: 93px;
+    border-radius: 10px;
+    padding: 0 15px;
+    transition: all 250ms 0s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+    text-align: center;
+    transition: all 250ms 0s ease;
+  }
+  
+  .logo img {
+    width: 93px;
+    height: 93%;
+    transition: all 250ms 0s ease;
+  }
+  .logo img:hover {
+    scale: 1.1;
+    opacity: 1;
+  }
+  
+  .logo p {
+    padding: 0;
+    margin: 0;
+    color: blue;
+    cursor: pointer;
+    font-size: 50px;
+    transition: all 250ms ease;
+  }
+  h1:hover {
+    color: red;
+  }
+  .list{
+    margin-left: -30px;
+    padding: 0;
+  }
+  .list ul,
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+  }
+  select {
+    border: none;
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    right: -180px;
+    height: calc(100% - 93px);
+    width: 85px;
+    background-color: #1c6bff;
+    /* background-image: linear-gradient(to bottom, rgba(189, 7, 57, 0.8), rgba(28, 107, 255, 0.8)); */
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    transition: all 200ms ease-out;
+    z-index: 300;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    font-weight: bold;
+  }
+  .icon {
+    width: 23px;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+  }
+  .nav-svg {
+    margin-right: 10px;
+    width: fit-content;
+    display: none;
+    transform: rotate(0deg);
+    transition: all 200ms ease-out;
+  }
+  .list-nav {
+    margin-top: 25px;
+  }
+  .list-nav a {
+    font-size: 17px;
+    font-weight: bold;
+  }
+/* header */
+
+
+/* General */
+h2 {
+    margin: auto;
+    font-size: xx-large;
+    width: fit-content;
+    margin-bottom: 20px;
+    color: red;
+    transition: all 250ms 0s ease;
+  }
+  
+  h3 {
+    color: red;
+    font-size: x-large;
+  
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    transition: all 250ms 0s ease;
+  }
+  h4 {
+    
+    margin: auto;
+    font-size: large;
+    color: chartreuse;
+    margin: 20px auto;
+  }
+  .images h4{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: blue;
+  }
+  .general-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: fit-content;
+    padding: 10px;
+    border: 3px black solid;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+  }
+  .general-info h3 {
+    width: fit-content;
+  }
+  .general-info span {
+    font-weight: bolder;
+  }
+  .general-info p {
+    line-height: 30px;
+    font-size: 18px;
+    /* color: rgb(246, 255, 0); */
+  }
+  
+  .general-info ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: yellow;
+  }
+
+  .ahmed-salem{
+    color: blue;  
+    letter-spacing: 3px
+
+  }
+  .ahmed-salem:hover{
+    border-bottom: solid white 1px;
+  }
+
+/* General */
+
+/* declaration */
+.declaration {
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom:50px;
+  }
+/* declaration */
+
+.old,.new,.motor,.car-v{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* slider */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin:  auto;
+    margin-bottom:50px ;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    /* border-radius: 10px; */
+    background-color: black;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides .img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 18px;
+    z-index: 2;
+    
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+/* slider */
+
+/* footer */
+footer{
+    margin-top: 30px;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+   
+}
+
+footer span{
+    color: yellow;
+    font-weight: bold;
+}
+
+#contact{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+#contact img {
+    width:50px;
+}
+/* footer */
+
+/* Responsiveness */
+
+
+/* for nav */
+@media (min-width: 200px) and (max-width: 750px) {
+    header h1 {
+      font-size: 40px;
+    }
+    .list {
+      display: none;
+    }
+    .nav-svg {
+      display: block;
+    }
+    .general-info,
+    .declaration {
+      width: 85%;
+      padding: 0;
+    }
+    h4 {
+      text-align: start;
+    }
+  
+    .declaration ul {
+      padding: 0 0 0 20px;
+    }
+    footer{
+        flex-direction: column;
+        height: fit-content;
+    }
+  }
+/* for nav */
+@media (max-width: 768px) {
+    .slider {
+        width: 95%;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+/* Responsiveness */
