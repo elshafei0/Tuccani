@@ -41,17 +41,19 @@ window.addEventListener('resize', updateNavDisplay);
 //nav
 
 //Select
- function scrollToContent() {
-        
-        const selectedValue = document.getElementById('images').value;
+function scrollToContent(selectElement) {
+    
+    const selectedValue = selectElement.value;
 
-        if (selectedValue !== 'Images') {
-            const section = document.getElementById(selectedValue);
-            section.scrollIntoView({ behavior: 'smooth' }); 
+   
+    if (selectedValue !== 'Images') {
+        const section = document.getElementById(selectedValue);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' }); // الانتقال بشكل سلس
         }
     }
+}
 //Select
-
 
 // slider
 var slideIndex = [0, 0, 0, 0];  // إضافة عنصر جديد للمؤشر الخاص بالشرائح
