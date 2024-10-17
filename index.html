@@ -23,12 +23,15 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li>
-              <select id="images" name="images">
-                <option value="#old">Images</option>
-                <option onclick="old" value="Old">Old</option>
-                <option value="New">New</option>
-                <option value="Motor">Motor</option>
-              </select>
+              <select id="images" name="images" onchange="scrollToContent()">
+                <option value="Images">Choose</option>
+                <option value="old">Old</option>
+                <option value="new">New</option>
+                <option value="motor">Motor</option>
+                <option value="car-v">Car-V</option>
+            </select>
+            
+            
             </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -44,14 +47,15 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li>
-              <select id="images" name="images">
-                <option value="Images">Images</option>
-                <a href="OldGen"> <option value="Old" onclick="OldGen" >Old</option></a>
-                <option value="New">New</option>
-                <option value="Motor">Motor</option>
-              </select>
+              <select id="images" name="images" onchange="scrollToContent()">
+                <option value="Images">Choose</option>
+                <option value="old">Old</option>
+                <option value="new">New</option>
+                <option value="motor">Motor</option>
+                <option value="car-v">Car-V</option>
+            </select>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -214,7 +218,7 @@
         <!-- end declaration -->
 
     <!-- Slider 1 -->
-   <div id="old" class="old">
+   <div id="old" class="content">
     <h4  >
         Old Gen Image
     </h4>
@@ -245,7 +249,7 @@
    </div>
 
     <!-- Slider 2-->
-<div class="new">
+<div id="new" class="content">
     <h4>
         New Gen Image
     </h4>
@@ -278,7 +282,7 @@
 </div>
 
 <!-- Slider 3 -->
-<div class="motor">
+<div id="motor" class="content">
     <h4>
         V6 Motor Image
     </h4>
@@ -308,16 +312,16 @@
 </div>
 
 <!-- slide 4 -->
- <div class="car-v">
+ <div id="car-v" class="content">
     <h4>Car Vedio❤</h4>
     <div class="slider" id="slider4">
         <div class="slides">
             <video src="./media/vedio/vedio-1.mp4" controls></video>
             <video src="./media/vedio/vedio-2.mp4" controls></video>
             <video src="./media/vedio/vedio-3.mp4" controls></video>
+            <video src="./media/vedio/vedio-4.mp4" controls></video>
             <video src="./media/vedio/vedio-5.mp4" controls></video>
             <video src="./media/vedio/vedio-6.mp4" controls></video>
-            <video src="./media/vedio/vedio-4.mp4" controls></video>
             <video src="./media/vedio/ahmed-salem-car.mp4" controls></video>
            
         </div>
@@ -346,6 +350,8 @@
 <!-- end footer -->
     
 </body>
+
+
 
 
 </html>
