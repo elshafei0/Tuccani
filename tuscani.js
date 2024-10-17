@@ -40,6 +40,18 @@ updateNavDisplay();
 window.addEventListener('resize', updateNavDisplay);
 //nav
 
+//Select
+ function scrollToContent() {
+        
+        const selectedValue = document.getElementById('images').value;
+
+        if (selectedValue !== 'Images') {
+            const section = document.getElementById(selectedValue);
+            section.scrollIntoView({ behavior: 'smooth' }); 
+        }
+    }
+//Select
+
 
 // slider
 var slideIndex = [0, 0, 0, 0];  // إضافة عنصر جديد للمؤشر الخاص بالشرائح
