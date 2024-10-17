@@ -1,14 +1,19 @@
 *{
     box-sizing: border-box;
 }
+@font-face{
+  src: url(./Font/Barlow-Bold.ttf);
+  font-family: Barlow;
+ }
 body {
-    font-family: Arial, sans-serif;
+    font-family: Barlow, sans-serif;
     /* direction: rtl; */
     margin: 0;
     padding: 0;
-    background-image:linear-gradient(to right, #BD0739,#1c6bff,#969696);
+    /* background-image:linear-gradient(to right, #BD0739,#1c6bff,#969696); */
     /* background:repeating-radial-gradient(circle, #BD0739,#1c6bff,#969696 ); */
-    color: white;
+    background-color: #64766a;
+    color: #f4f2f3;
     position: relative;
     width: 100%;
     transition: opacity 300ms ease-out; 
@@ -20,7 +25,8 @@ body {
 header {
     /* background-image: linear-gradient(to right, #BD0739, #1c6bff); */
     /* background-image: linear-gradient(to right, #BD0739, #1c6bff, #969696); */
-    background-image: linear-gradient(to right, rgba(189, 7, 57, 0.8), rgba(28, 107, 255, 0.8));
+    /* background-image: linear-gradient(to right, rgba(189, 7, 57, 0.8), rgba(28, 107, 255, 0.8)); */
+    background-color: #94a7ae;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
    
     height: 93px;
@@ -60,7 +66,7 @@ header {
   .logo p {
     padding: 0;
     margin: 0;
-    color: blue;
+    color: #f4f2f3;
     cursor: pointer;
     font-size: 50px;
     transition: all 250ms ease;
@@ -141,12 +147,12 @@ h2 {
     font-size: xx-large;
     width: fit-content;
     margin-bottom: 20px;
-    color: red;
+    color: #c0a9bd;
     transition: all 250ms 0s ease;
   }
   
   h3 {
-    color: red;
+    color: #c0a9bd;
     font-size: x-large;
   
     display: flex;
@@ -161,7 +167,7 @@ h2 {
     
     margin: auto;
     font-size: large;
-    color: chartreuse;
+    color: #c0a9bd;
     margin: 20px auto;
   }
   .images h4{
@@ -229,7 +235,7 @@ h2 {
   }
 /* declaration */
 
-.old,.new,.motor,.car-v{
+#old,#new,#motor,#car-v{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -315,6 +321,7 @@ video {
 footer{
     margin-top: 30px;
     background-color: black;
+    color: white;
     width: 100%;
     height: 100px;
     font-size: 25px;
